@@ -1,0 +1,25 @@
+@import '~sass/mixins';
+@import '~sass/variables';
+.area-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    @include define-size(100%, 30px);
+    .interation-slide {
+        @include align-horizontal(50%, 30px);
+        text-align: center;
+        .clickSlide {
+            @include define-size(25px, 8px);
+            @include background(white);
+            display: inline-block;
+            margin: 0 auto;
+            &:hover {
+                cursor: pointer;
+                @include background(darken(white, 20%));
+            }
+        }
+        .selected {
+            @include background($color-primary);
+        }
+    }
+}

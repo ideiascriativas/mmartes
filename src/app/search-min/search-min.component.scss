@@ -1,0 +1,17 @@
+@import '~sass/variables';
+button {
+    background: none;
+    border: 2px solid $color-primary;
+    text-align: center;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px -4px $color-secondary;
+    }
+    img {
+        padding: 3px 12px;
+        &:hover {
+            transform: rotateY(180deg);
+            transition-duration: 0.3s;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import '~sass/mixins';
+@import '~sass/variables';
+header {
+    @include define-size(100%, 700px);
+    position: relative;
+    z-index: 0;
+
+    .firstLayer {
+        @include layer(3); 
+        .logo {
+            color: $color-primary;
+            padding: 20px;
+        }
+    }
+
+    .secondLayer {
+        @include layer(2);
+        .back-dark {
+            width: 100%;
+            height: 100%;
+            background: $color-darken;
+            opacity: 0.6;
+        }
+    }
+
+    .thirdLayer {
+        @include layer(1);
+    }
+}

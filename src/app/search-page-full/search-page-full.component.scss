@@ -1,0 +1,89 @@
+@import '~sass/mixins';
+@import '~sass/variables';
+.search-page {
+    @include fixed-full-page(); // display: none;
+    .back-page {
+        @include absolute-top-left();
+        @include layer(2);
+        display: flex;
+        align-items: center;
+        .exit {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.5em;
+            color: $color-secondary;
+            button {
+                background: none;
+                border: none;
+                color: $color-secondary;
+                font-size: 1em;
+                &:hover {
+                    cursor: pointer;
+                }
+                span {
+                    animation-delay: 2s;
+                }
+            }
+        }
+        .search-content {
+            width: 100%;
+            .input {
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                input {
+                    @include define-size(270px/320px * 100%, 50px);
+                    padding: 10px;
+                    background: none;
+                    border: none;
+                    border-bottom: 3px solid $color-primary;
+                    margin: 5px auto;
+                    color: $color-secondary;
+                    font-size: 1.5em;
+                    &:focus {
+                        outline: none;
+                    }
+                    &::-webkit-search-cancel-button {
+                        -webkit-appearance: none;
+                        display: block;
+                        background: url('/assets/icons/cancel.svg');
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+                button {
+                    animation-delay: 1s;
+                    padding: 10px 20px;
+                    color: $color-primary;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    border: none;
+                    background: none;
+                    margin: 5px auto;
+                    &:hover {
+                        cursor: pointer;
+                        background: $color-secondary;
+                        color: $color-primary;
+                        border-radius: 5px;
+                        transition-duration: 0.3s;
+                    }
+                    img {
+                        width: 20px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    .dark-page {
+        @include absolute-top-left();
+        @include layer(1);
+        background: $color-darken;
+        opacity: 0.7;
+    }
+}
+
+@media(max-width: 798px) {
+    button span {}
+}

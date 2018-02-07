@@ -1,0 +1,45 @@
+@mixin define-size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin define-size-resp($width, $height) {
+    min-width: 300px;
+    min-height: 30px;
+    @include define-size($width, $height);
+}
+
+@mixin align-horizontal($width, $height) {
+    margin: 0 auto;
+    @include define-size-resp($width, $height);
+}
+
+@mixin background($background, $repeat: null, $attachment: null, $size: null, $position: null) {
+    background: $background $repeat $attachment;
+    background-position: $position;
+    background-size: $size;
+}
+
+@mixin text-align($align) {
+    text-align: $align;
+}
+
+@mixin absolute-top-left() {
+    @include define-size(100%, 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@mixin fixed-full-page() {
+    @include define-size(100%, 100%);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+@mixin layer($index:0) {
+    position: absolute;
+    @include define-size(100%, 100%);
+    z-index: $index;
+}
