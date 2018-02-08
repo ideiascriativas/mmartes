@@ -1,0 +1,27 @@
+@import '~sass/mixins';
+button {
+    display: none;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    z-index: 5;
+    img {
+        transition-duration: 0.5s;
+        &:hover {
+            width: 28px;
+            height: auto;
+            cursor: pointer;
+        }
+        .horizont {
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+@media(max-width: 880px) {
+    button {
+        display: block;
+    }
+}

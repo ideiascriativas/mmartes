@@ -1,0 +1,55 @@
+@import '~sass/mixins';
+@import '~sass/variables';
+.menu-side-right {
+    animation-duration: 0.3s;
+    @include define-size-resp(425px/1024px * 100%, 100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    @include background($color-primary);
+    text-align: left;
+    box-shadow: -4px 0 20px -5px $color-secondary;
+    z-index: 5;
+    color: $color-secondary;
+    .header-menu {
+        text-align: center;
+        padding: 20px 15px 10px;
+        font-weight: bold;
+    }
+    .little-division {
+        width: 40px;
+        height: 2px;
+        background: $color-secondary;
+        margin: 20px auto;
+        border: none;
+    }
+    .content {
+        padding: 10px;
+        list-style: none;
+        a {
+            display: list-item;
+            padding: 10px 5px;
+            &:hover {
+                cursor: pointer;
+                color: $color-primary;
+                background: $color-secondary;
+            }
+        }
+        .no-cursor {
+            padding: 10px 0;
+            &:hover {
+                background: transparent;
+            }
+        }
+    }
+}
+
+.back-dark {
+    @include define-size(100%, 100%);
+    background: rgba($color: #000000, $alpha: 0.6);
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    animation-duration: 0.1s;
+}

@@ -10,12 +10,12 @@
         text-align: center;
         .clickSlide {
             @include define-size(25px, 8px);
-            @include background(white);
+            @include background($color-secondary);
             display: inline-block;
             margin: 0 auto;
             &:hover {
                 cursor: pointer;
-                @include background(darken(white, 20%));
+                @include background($color-primary);
             }
         }
         .selected {

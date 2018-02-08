@@ -19,18 +19,18 @@ a {
 }
 
 .icon {
-    width: 32px;
-    height: 32px;
-
-    &:hover {
-        transform: rotateZ(360deg);
-        transition-duration: 2s;
-    }
+    width: 24px;
+    height: 24px;
 }
 
 .small-icon {
     width: 18px;
     height: 18px;
+}
+
+.big-icon {
+    width: 40px;
+    height: 40px;
 }
 
 button:focus {

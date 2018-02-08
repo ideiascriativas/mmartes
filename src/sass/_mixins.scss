@@ -4,7 +4,7 @@
 }
 
 @mixin define-size-resp($width, $height) {
-    min-width: 300px;
+    min-width: 280px;
     min-height: 30px;
     @include define-size($width, $height);
 }
@@ -41,5 +41,10 @@
 @mixin layer($index:0) {
     position: absolute;
     @include define-size(100%, 100%);
+    z-index: $index;
+}
+
+@mixin layerNoSize($index:0) {
+    position: absolute;
     z-index: $index;
 }

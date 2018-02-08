@@ -2,9 +2,10 @@
 @import '~sass/variables';
 .search-page {
     @include fixed-full-page(); // display: none;
+    z-index: 10;
     .back-page {
-        @include absolute-top-left();
-        @include layer(2);
+        @include fixed-full-page();
+        @include layer(10);
         display: flex;
         align-items: center;
         .exit {
@@ -23,6 +24,12 @@
                 }
                 span {
                     animation-delay: 2s;
+                }
+                img {
+                    &:hover {
+                        transform: rotateZ(360deg);
+                        transition-duration: 2s;
+                    }
                 }
             }
         }
@@ -47,9 +54,10 @@
                     &::-webkit-search-cancel-button {
                         -webkit-appearance: none;
                         display: block;
-                        background: url('/assets/icons/cancel.svg');
+                        background: $color-primary;
                         width: 10px;
                         height: 10px;
+                        border-radius: 100%;
                     }
                 }
                 button {
@@ -77,8 +85,8 @@
         }
     }
     .dark-page {
-        @include absolute-top-left();
-        @include layer(1);
+        @include fixed-full-page();
+        @include layer(5);
         background: $color-darken;
         opacity: 0.7;
     }
