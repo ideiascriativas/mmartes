@@ -22,6 +22,9 @@ import { SearchButtonDirective } from './search-button.directive';
 import { ButtonMenuComponent } from './button-menu/button-menu.component';
 import { MenuService } from './menu.service';
 import { IconMenuDirective } from './icon-menu.directive';
+import { LoadingComponent } from './loading/loading.component';
+import { LoadingService } from './services/loading.service';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -41,13 +44,15 @@ import { IconMenuDirective } from './icon-menu.directive';
     SearchIconDirective,
     SearchButtonDirective,
     ButtonMenuComponent,
-    IconMenuDirective
+    IconMenuDirective,
+    LoadingComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [SlideService, SearchService, MenuService],
+  providers: [SlideService, SearchService, MenuService, LoadingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

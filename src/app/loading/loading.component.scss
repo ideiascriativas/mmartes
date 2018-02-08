@@ -1,0 +1,28 @@
+@import '~sass/mixins';
+@import '~sass/variables';
+
+.full-page {
+    @include fixed-full-page();
+    z-index: 1000;
+
+    .full-page-content {
+        @include layer(1002);
+        display: flex;
+        align-items: center;
+
+        .content {
+            margin: 0 auto;
+            color: $color-primary;
+            text-align: center;
+            img {
+                width: 80px;
+                height: auto;
+            }
+        }
+    }
+
+    .dark-page {
+        background: $color-darken;
+        @include layer(1001);
+    }
+}

@@ -1,11 +1,11 @@
-<div class="menu-side-right animated" [class.slideOutRight]="!isOpenMenu" [class.slideInRight]="isOpenMenu">
+<div class="menu-side-right animated" [hidden]="!isOpenMenu" [class.slideInRight]="isOpenMenu">
   <div class="header-menu">
     <div class="title" appUppercase>Menu</div><br>
     <div class="logo">MM Artes</div>
   </div>
   <hr class="little-division">
   <nav class="content">
-    <a appUppercase>Home</a>
+    <a appUppercase [routerLink]="['/user/bob']">Home</a>
     <a appUppercase>Produtos</a>
     <a appUppercase>Fotos e Vídeos</a>
     <a appUppercase>Contato</a>
@@ -14,5 +14,5 @@
     </a>
   </nav>
 </div>
-<div class="back-dark animated" [class.slideOutLeft]="!isOpenMenu" [class.fadeIn]="isOpenMenu"></div>
+<div class="back-dark animated" [hidden]="!isOpenMenu" [class.fadeIn]="isOpenMenu"></div>
 <app-button-menu></app-button-menu>

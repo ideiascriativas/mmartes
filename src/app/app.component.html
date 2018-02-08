@@ -1,2 +1,5 @@
-<router-outlet></router-outlet>
+<div [hidden]="isLoading">
+    <router-outlet></router-outlet>
+</div>
 <app-search-page-full></app-search-page-full>
+<app-loading [hidden]="!isLoading"></app-loading>

@@ -1,0 +1,39 @@
+@import '~sass/mixins';
+@import '~sass/variables';
+
+.full-page {
+    @include fixed-full-page();
+
+    .full-page-content {
+        @include layer(2);
+        display: flex;
+        align-items: center;
+
+        .content {
+            margin: 0 auto;
+            color: $color-primary;
+            text-align: center;
+
+            button {
+                border: none;
+                padding: 10px 20px;
+                background: $color-secondary;
+                color: $color-primary;
+                font-weight: bold;
+                border: 5px;
+                &:hover {
+                    background: $color-primary;
+                    color: $color-secondary;
+                    box-shadow: 0 0 30px -8px $color-secondary;
+                    cursor: pointer;
+                    transition-duration: 0.4s;
+                }
+            }
+        }
+    }
+
+    .dark-page {
+        background: $color-darken;
+        @include layer(1);
+    }
+}
