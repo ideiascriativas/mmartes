@@ -1,28 +1,80 @@
 @import '~sass/variables';
-
 .new-content {
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    .content {
-        width: 50%;
-        min-width: 300px;
-        color: $color-secondary;
-        margin: 0 auto;
-        text-align: center;
-        .title {
-            font-size: 1.2em;
-        }
-        .title-highlight {
-            font-size: 2.2em;
-            color: $color-primary;
-            font-weight: bold;
-        }
-        .description {
-            margin: 10px 0;
-        }
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  .content {
+    min-width: 300px;
+    color: $color-secondary;
+    margin: 0 auto;
+    text-align: center;
+    .title {
+      font-size: 1.2em;
     }
+    .title-highlight {
+      font-size: 2.2em;
+      color: $color-primary;
+      font-weight: bold;
+    }
+    .description {
+      margin: 10px 0;
+    }
+  }
+}
 
+@media(max-width: 425px) {
+  .new-content {
+    .content {
+      .title {
+        font-size: 1em;
+      }
+      .title-highlight {
+        font-size: 1.8em;
+      }
+      .description {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+@media(min-width: 600px) {
+  .typewriter {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid $color-primary;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 1.5s steps(40, end), blink-caret .75s step-end infinite;
+  }
+}
+
+/* The typing effect */
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent
+  }
+  50% {
+    border-color: $color-primary;
+  }
 }
