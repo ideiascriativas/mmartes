@@ -4,7 +4,7 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 @Injectable()
 export class SlideService {
 
-  private slide = new BehaviorSubject<string>('slideOne');
+  private slide = new BehaviorSubject<string>('1');
   currentSlide = this.slide.asObservable();
 
   constructor() { }
