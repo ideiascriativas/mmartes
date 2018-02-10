@@ -1,0 +1,45 @@
+@import '~sass/variables';
+.content-div {
+  text-align: center;
+  width: 100%;
+  min-height: 400px;
+  .content {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    .image {
+      background: $color-primary;
+      height: 100%;
+      width: 450px/960px * 100%;
+      float: left;
+      display: flex;
+      align-items: center;
+      position: relative;
+      img {
+        height: 300px;
+        width: auto;
+        position: absolute;
+        right: -40px;
+      }
+    }
+    .text {
+      float: right;
+      text-align: left;
+      width: 510px/960px * 100%;
+      height: 100%;
+      .title {
+        padding: 10px;
+        margin-left: 40px;
+        margin-top: 80px;
+        h2 {
+          color: $color-primary;
+        }
+        p {
+          text-align: left;
+          text-justify: distribute;
+          text-indent: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { ScrollToModule } from 'ng2-scroll-to';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -28,6 +29,7 @@ import { MenuService } from './menu.service';
 import { SearchService } from './search.service';
 import { LoadingService } from './services/loading.service';
 import { NewsService } from './services/news.service';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -49,11 +51,13 @@ import { NewsService } from './services/news.service';
     IconMenuDirective,
     LoadingComponent,
     NotFoundComponent,
-    SlideContentComponent
+    SlideContentComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ScrollToModule.forRoot()
   ],
   providers: [
     SlideService,
