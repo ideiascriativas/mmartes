@@ -14,6 +14,11 @@
             color: $color-primary;
             text-align: center;
 
+            img {
+                width: 300px;
+                height: auto;
+            }
+
             button {
                 border: none;
                 padding: 10px 20px;

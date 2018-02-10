@@ -8,9 +8,13 @@ header {
     .firstLayer {
         @include layer(3); 
         .logo {
-            color: $color-primary;
-            padding: 20px;
-            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            img {
+                width: 120px;
+                height: auto;
+            }
         }
     }
 
