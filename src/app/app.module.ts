@@ -33,6 +33,7 @@ import { LoadingService } from './services/loading.service';
 import { NewsService } from './services/news.service';
 import { ProductLineService } from './services/product-line.service';
 import { BackImageDirective } from './directives/back-image.directive';
+import { FullImageComponent } from './full-image/full-image.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { BackImageDirective } from './directives/back-image.directive';
     SlideContentComponent,
     AboutComponent,
     ProductsComponent,
-    BackImageDirective
+    BackImageDirective,
+    FullImageComponent
   ],
   imports: [
     BrowserModule,
