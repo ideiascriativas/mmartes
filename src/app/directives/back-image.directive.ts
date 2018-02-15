@@ -16,7 +16,7 @@ export class BackImageDirective implements OnInit {
 
   ngOnInit() {
     if (this.imageBackground.indexOf('/') >= 0) {
-      this.background = this.sanitizer.bypassSecurityTrustStyle(`url('${this.imageBackground}') no-repeat fixed`);
+      this.background = this.sanitizer.bypassSecurityTrustStyle(`url('${this.imageBackground}') no-repeat`);
     } else {
       this.background = this.sanitizer.bypassSecurityTrustStyle(this.imageBackground);
     }

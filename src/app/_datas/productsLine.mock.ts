@@ -14,12 +14,12 @@ export const PRODUCTS_LINE: ProductLine[] = [
             {
                 id: 2,
                 name: 'Azul',
-                image: 'blue'
+                image: 'assets/images/teste4.jpg'
             },
             {
                 id: 3,
                 name: 'Amarelo',
-                image: 'yellow'
+                image: 'assets/images/teste1.jpg'
             },
             {
                 id: 4,
@@ -29,12 +29,12 @@ export const PRODUCTS_LINE: ProductLine[] = [
             {
                 id: 5,
                 name: 'Roxo',
-                image: 'purple'
+                image: 'assets/images/teste2.jpg'
             },
             {
                 id: 6,
                 name: 'Verde',
-                image: 'green'
+                image: 'assets/images/teste3.jpg'
             },
         ]
     },

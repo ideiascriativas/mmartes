@@ -10,8 +10,9 @@
         <h2>{{productLine.name}}</h2>
         <br>
         <div class="productsDetail">
-          <a class="product" *ngFor="let product of productLine.products" appBackImage [imageBackground]="product.image">
+          <a class="product" *ngFor="let product of productLine.products" (click)="seeInModeFullImage(productLine.id, product.id)">
             <span>{{product.name}}</span>
+            <div class="box" appBackImage [imageBackground]="product.image"></div>
           </a>
         </div>
       </div>

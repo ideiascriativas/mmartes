@@ -1,7 +1,7 @@
-<div class="full-page">
+<div class="full-page" [hidden]="!openImageFull">
   <div class="full-page-content">
       <div class="close">
-        <a>X</a>
+        <a (click)="closeOpenImage()">X</a>
       </div>
       <div class="image">
         <img [src]="image.src" [alt]="image.alt">

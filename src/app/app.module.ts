@@ -18,6 +18,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { SlideContentComponent } from './slide-content/slide-content.component';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
+import { FullImageComponent } from './full-image/full-image.component';
 
 import { ShadowRedDirective } from './shadow-red.directive';
 import { RainbowEffectDirective } from './rainbow-effect.directive';
@@ -25,15 +26,14 @@ import { SearchButtonDirective } from './search-button.directive';
 import { SearchIconDirective } from './search-icon.directive';
 import { IconMenuDirective } from './icon-menu.directive';
 import { UppercaseDirective } from './uppercase.directive';
+import { BackImageDirective } from './directives/back-image.directive';
 
 import { SlideService } from './slide.service';
 import { MenuService } from './menu.service';
 import { SearchService } from './search.service';
-import { LoadingService } from './services/loading.service';
 import { NewsService } from './services/news.service';
 import { ProductLineService } from './services/product-line.service';
-import { BackImageDirective } from './directives/back-image.directive';
-import { FullImageComponent } from './full-image/full-image.component';
+import { FullImageService } from './services/full-image.service';
 
 @NgModule({
   declarations: [
@@ -70,9 +70,9 @@ import { FullImageComponent } from './full-image/full-image.component';
     SlideService,
     SearchService,
     MenuService,
-    LoadingService,
     NewsService,
-    ProductLineService
+    ProductLineService,
+    FullImageService
   ],
   bootstrap: [AppComponent]
 })

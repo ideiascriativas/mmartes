@@ -1,4 +1,6 @@
+import { FullImage } from './../_classes/fullImage';
 import { Component, OnInit } from '@angular/core';
+import { FullImageService } from '../services/full-image.service';
 
 @Component({
   selector: 'app-full-image',
@@ -7,14 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FullImageComponent implements OnInit {
 
-  image = {
-    src: 'assets/images/teste4.jpg',
-    alt: 'teste4'
-  };
+  openImageFull: boolean;
 
-  constructor() { }
+  image: FullImage;
+
+  constructor(
+    private fullImageService: FullImageService
+  ) { }
 
   ngOnInit() {
+    this.initAttributes();
   }
 
+  closeOpenImage() {
+    this.fullImageService.closeOpenImage();
+  }
+
+  private initAttributes(): void {
+    this.fullImageService.isOpen.subscribe(open => {
+      this.openImageFull = open;
+    });
+    this.fullImageService.fullImage.subscribe(fullImage => {
+      this.image = fullImage;
+    });
+  }
 }
