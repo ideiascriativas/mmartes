@@ -1,7 +1,7 @@
 @import '~sass/mixins';
 @import '~sass/variables';
 header {
-    @include define-size(100%, 700px);
+    @include define-size(100%, 500px);
     position: relative;
     z-index: 0;
 
