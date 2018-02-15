@@ -3,7 +3,7 @@
 .menu-side-right {
     animation-duration: 0.3s;
     @include define-size-resp(425px/1024px * 100%, 100%);
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     @include background($color-primary);

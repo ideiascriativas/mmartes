@@ -16,6 +16,8 @@ import { ButtonMenuComponent } from './button-menu/button-menu.component';
 import { LoadingComponent } from './loading/loading.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SlideContentComponent } from './slide-content/slide-content.component';
+import { AboutComponent } from './about/about.component';
+import { ProductsComponent } from './products/products.component';
 
 import { ShadowRedDirective } from './shadow-red.directive';
 import { RainbowEffectDirective } from './rainbow-effect.directive';
@@ -29,7 +31,8 @@ import { MenuService } from './menu.service';
 import { SearchService } from './search.service';
 import { LoadingService } from './services/loading.service';
 import { NewsService } from './services/news.service';
-import { AboutComponent } from './about/about.component';
+import { ProductLineService } from './services/product-line.service';
+import { BackImageDirective } from './directives/back-image.directive';
 
 @NgModule({
   declarations: [
@@ -52,7 +55,9 @@ import { AboutComponent } from './about/about.component';
     LoadingComponent,
     NotFoundComponent,
     SlideContentComponent,
-    AboutComponent
+    AboutComponent,
+    ProductsComponent,
+    BackImageDirective
   ],
   imports: [
     BrowserModule,
@@ -64,7 +69,8 @@ import { AboutComponent } from './about/about.component';
     SearchService,
     MenuService,
     LoadingService,
-    NewsService
+    NewsService,
+    ProductLineService
   ],
   bootstrap: [AppComponent]
 })

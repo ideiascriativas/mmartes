@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterContentChecked } from '@angular/core';
 import { Router, NavigationStart, NavigationCancel, NavigationEnd, NavigationError, RouterEvent} from '@angular/router';
 
 @Component({
@@ -6,12 +6,18 @@ import { Router, NavigationStart, NavigationCancel, NavigationEnd, NavigationErr
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements AfterContentChecked{
 
   isLoading = true;
 
   constructor(private router: Router) {
     router.events.subscribe((event: RouterEvent) => {
+      this.navigationInterceptor(event);
+    });
+  }
+
+  ngAfterContentChecked() {
+    this.router.events.subscribe((event: RouterEvent) => {
       this.navigationInterceptor(event);
     });
   }

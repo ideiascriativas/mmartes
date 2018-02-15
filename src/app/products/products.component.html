@@ -1,0 +1,21 @@
+<div id="products" class="content-div">
+  <div class="title">
+    <h2>Produtos</h2>
+    <br>
+    <p>Anim fugiat cillum adipisicing nostrud. Reprehenderit non magna do reprehenderit aliqua duis sit commodo dolore commodo tempor reprehenderit veniam. Eu adipisicing minim laboris nostrud qui tempor sunt do laborum ad.</p>
+  </div>
+  <div class="products" *ngFor="let productLine of productsLine">
+    <div appBackImage [imageBackground]='productLine.image' class="back-image">
+      <div>
+        <h2>{{productLine.name}}</h2>
+        <br>
+        <div class="productsDetail">
+          <a class="product" *ngFor="let product of productLine.products" appBackImage [imageBackground]="product.image">
+            <span>{{product.name}}</span>
+          </a>
+        </div>
+      </div>
+      <div class="dark"></div>
+    </div>
+  </div>
+</div>
