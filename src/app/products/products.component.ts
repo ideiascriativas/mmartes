@@ -33,6 +33,7 @@ export class ProductsComponent implements OnInit {
       const image = new FullImage();
       image.src = a.image;
       image.alt = a.name;
+      console.log('Nova imagem: ' + image);
       this.fullImageService.changeFullImage(image);
     });
   }

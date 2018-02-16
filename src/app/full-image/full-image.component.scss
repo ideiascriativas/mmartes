@@ -1,53 +1,70 @@
 @import '~sass/variables';
-
 .full-page {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  .full-page-content {
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
-
-    .full-page-content {
+    z-index: 1002;
+    display: flex;
+    align-items: center;
+    .modal {
+      width: 95%;
+      height: 95%;
+      background: $color-secondary;
+      margin: 0 auto;
+      position: relative;
+      box-shadow: 0 0 30px -5px $color-secondary;
+      .close {
         position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1002;
-
-        .close {
-            width: 100%;
-            text-align: right;
-            color: $color-secondary;
-            padding: 10px 0;
-            a {
-                padding: 0 10px;
-            }
+        top: 5px;
+        right: 10px;
+        &:hover {
+          cursor: pointer;
         }
-
-        .image {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            text-align: center;
-            img {
-                width: 90%;
-                min-width: 300px;
-                height: auto;
-                max-height: 80%;
-            }
-        }
-    }
-
-    .full-page-dark {
+      }
+      .image {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          img {
+             width: 100%;
+             height: auto;  
+             max-height: 100%;
+          }
+          background-position: center !important;
+          background-size: 100% auto !important;
+      }
+      .alt-image{
         position: absolute;
+        bottom: 10px;
         width: 100%;
-        height: 100%;
+        text-align: center;
         background: $color-darken;
-        opacity: 0.6;
-        top: 0;
-        left: 0;
-        z-index: 1001;
+
+        h3 {
+          padding: 10px;
+          color: $color-secondary;
+        }
+      }
     }
+  }
+  .full-page-dark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $color-darken;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+  }
 }

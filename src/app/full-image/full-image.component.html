@@ -1,10 +1,17 @@
 <div class="full-page" [hidden]="!openImageFull">
   <div class="full-page-content">
-      <div class="close">
-        <a (click)="closeOpenImage()">X</a>
-      </div>
-      <div class="image">
-        <img [src]="image.src" [alt]="image.alt">
+      <div class="modal">
+         <div class="close">
+           <a (click)="closeOpenImage()">
+             <img src="assets/icons/cancel-back-white.svg" alt="fechar" class="icon">
+           </a>
+         </div>
+         <div class="image">
+          <img [src]="image.src" alt="image.alt">
+         </div>
+         <div class="alt-image">
+           <h3>{{image.alt}}</h3>
+         </div>
       </div>
   </div>
   <div class="full-page-dark"></div>
