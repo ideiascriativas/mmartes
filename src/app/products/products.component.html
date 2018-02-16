@@ -11,7 +11,7 @@
         <br>
         <div class="productsDetail">
           <a class="product" *ngFor="let product of productLine.products" (click)="seeInModeFullImage(productLine.id, product.id)">
-            <span>{{product.name}}</span>
+            <span *ngIf="product.name" >{{product.name}}</span>
             <div class="box" appBackImage [imageBackground]="product.image"></div>
           </a>
         </div>

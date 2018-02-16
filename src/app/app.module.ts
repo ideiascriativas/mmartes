@@ -34,6 +34,7 @@ import { SearchService } from './search.service';
 import { NewsService } from './services/news.service';
 import { ProductLineService } from './services/product-line.service';
 import { FullImageService } from './services/full-image.service';
+import { StreamsComponent } from './streams/streams.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { FullImageService } from './services/full-image.service';
     AboutComponent,
     ProductsComponent,
     BackImageDirective,
-    FullImageComponent
+    FullImageComponent,
+    StreamsComponent
   ],
   imports: [
     BrowserModule,

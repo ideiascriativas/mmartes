@@ -18,7 +18,7 @@
     .modal {
       width: 95%;
       height: 95%;
-      background: $color-secondary;
+      background: $color-darken;
       margin: 0 auto;
       position: relative;
       box-shadow: 0 0 30px -5px $color-secondary;
@@ -36,9 +36,10 @@
           display: flex;
           align-items: center;
           img {
-             width: 100%;
+             width: 90%;
              height: auto;  
-             max-height: 100%;
+             max-height: 90%;
+             margin: 0 auto;
           }
           background-position: center !important;
           background-size: 100% auto !important;
@@ -48,7 +49,7 @@
         bottom: 10px;
         width: 100%;
         text-align: center;
-        background: $color-darken;
+        background: $color-primary;
 
         h3 {
           padding: 10px;
@@ -67,4 +68,16 @@
     left: 0;
     z-index: 1001;
   }
+}
+
+@media(min-width: 1280px) {
+  .full-page {
+    .full-page-content {
+      .modal {
+         width: 80%;
+         max-width: 1400px;
+      }
+    }
+  }
+
 }

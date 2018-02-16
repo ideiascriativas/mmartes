@@ -9,7 +9,7 @@
          <div class="image">
           <img [src]="image.src" alt="image.alt">
          </div>
-         <div class="alt-image">
+         <div class="alt-image" *ngIf="image.alt" >
            <h3>{{image.alt}}</h3>
          </div>
       </div>
