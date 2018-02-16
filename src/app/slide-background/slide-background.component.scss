@@ -21,7 +21,7 @@
     center);
   }
   #slideThree {
-    @include background(url('/assets/images/teste3.jpg'),
+    @include background(url('/assets/images/slide/slide3.png'),
     no-repeat,
     fixed,
     cover,
@@ -41,5 +41,23 @@
       cover,
       top);
     }
+
+    #slideTwo {
+       @include background(url('/assets/images/slide/slide2-cel.png'),
+       no-repeat,
+       fixed,
+       cover,
+       top);
+
+    }
+
+    #slideThree {
+      @include background(url('/assets/images/slide/slide3-cel.png'),
+      no-repeat,
+      fixed,
+      cover,
+      top);
+    }
+
   }
 }
