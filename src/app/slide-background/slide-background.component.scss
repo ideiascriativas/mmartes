@@ -1,23 +1,45 @@
 @import '~sass/mixins';
 .slide {
-    @include define-size(100%, 100%);
-    position: relative;
-    .slideItem {
-        @include absolute-top-left();
-        animation-duration: 0.8s;
-        filter: blur(2px);
-    }
-    #slideOne {
-        @include background(url('/assets/images/teste1.jpg'), no-repeat, fixed, cover, center);
-    }
-    #slideTwo {
-        @include background(url('/assets/images/teste2.jpg'), no-repeat, fixed, cover, center);
-    }
-    #slideThree {
-        @include background(url('/assets/images/teste3.jpg'), no-repeat, fixed, cover, center);
-    }
+  @include define-size(100%, 100%);
+  position: relative;
+  .slideItem {
+    @include absolute-top-left();
+    animation-duration: 0.8s;
+  }
+  #slideOne {
+    @include background(url('/assets/images/slide/slide1.png'),
+    no-repeat,
+    fixed,
+    cover,
+    top);
+  }
+  #slideTwo {
+    @include background(url('/assets/images/slide/slide2.png'),
+    no-repeat,
+    fixed,
+    cover,
+    center);
+  }
+  #slideThree {
+    @include background(url('/assets/images/teste3.jpg'),
+    no-repeat,
+    fixed,
+    cover,
+    center);
+  }
+  .disable {
+    display: none;
+  }
+}
 
-    .disable {
-        display: none;
+@media(max-width:812px) {
+  .slide {
+    #slideOne {
+      @include background(url('/assets/images/slide/slide1-cel.png'),
+      no-repeat,
+      fixed,
+      cover,
+      top);
     }
+  }
 }

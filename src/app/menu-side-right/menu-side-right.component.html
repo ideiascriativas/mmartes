@@ -6,8 +6,8 @@
   </div>
   <hr class="little-division">
   <nav class="content">
-    <a appUppercase [routerLink]="['/user/bob']">Home</a>
-    <a appUppercase>Produtos</a>
+    <a appUppercase scrollTo href="#about" (click)="closeMenu()">Quem somos</a>
+    <a appUppercase scrollTo href="#products" (click)="closeMenu()">Produtos</a>
     <a appUppercase>Fotos e Vídeos</a>
     <a appUppercase>Contato</a>
     <a class="no-cursor">

@@ -18,4 +18,8 @@ export class MenuSideRightComponent implements OnInit {
     this.menuService.currentValue.subscribe(openMenu => this.isOpenMenu = openMenu);
   }
 
+  closeMenu() {
+    this.menuService.changeOpenMenu(false);
+  }
+
 }
