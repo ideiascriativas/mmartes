@@ -19,6 +19,7 @@ import { SlideContentComponent } from './slide-content/slide-content.component';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { FullImageComponent } from './full-image/full-image.component';
+import { StreamsComponent } from './streams/streams.component';
 
 import { ShadowRedDirective } from './shadow-red.directive';
 import { RainbowEffectDirective } from './rainbow-effect.directive';
@@ -34,7 +35,7 @@ import { SearchService } from './search.service';
 import { NewsService } from './services/news.service';
 import { ProductLineService } from './services/product-line.service';
 import { FullImageService } from './services/full-image.service';
-import { StreamsComponent } from './streams/streams.component';
+import { PicturesService } from './services/pictures.service';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { StreamsComponent } from './streams/streams.component';
     MenuService,
     NewsService,
     ProductLineService,
-    FullImageService
+    FullImageService,
+    PicturesService
   ],
   bootstrap: [AppComponent]
 })

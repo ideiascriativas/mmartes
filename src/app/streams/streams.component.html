@@ -4,4 +4,10 @@
       <h2>Fotos</h2>
     </div>
   </div>
+  <div class="pictures">
+    <a class="picture" *ngFor="let picture of pictures" (click)="seeInModeFullImage(picture.id)">
+      <span *ngIf="picture.alt">{{picture.alt}}</span>
+      <div class="box" appBackImage [imageBackground]="picture.path"></div>
+    </a>
+  </div>
 </div>
