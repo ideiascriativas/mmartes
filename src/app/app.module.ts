@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { ScrollToModule } from 'ng2-scroll-to';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -20,6 +21,7 @@ import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { FullImageComponent } from './full-image/full-image.component';
 import { StreamsComponent } from './streams/streams.component';
+import { ContactComponent } from './contact/contact.component';
 
 import { ShadowRedDirective } from './shadow-red.directive';
 import { RainbowEffectDirective } from './rainbow-effect.directive';
@@ -62,10 +64,12 @@ import { PicturesService } from './services/pictures.service';
     ProductsComponent,
     BackImageDirective,
     FullImageComponent,
-    StreamsComponent
+    StreamsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     ScrollToModule.forRoot()
   ],

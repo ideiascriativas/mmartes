@@ -1,0 +1,54 @@
+<div class="content-div">
+  <div class="content-title">
+    <div class="title">
+      <h2>Contato</h2>
+    </div>
+  </div>
+  <div class="content">
+    <div class="cards">
+      <a class="card">
+        <img src="assets/icons/whatsapp-logo.svg" alt="telefone" align="center">
+        <br>
+        <h2>83 99107-8970</h2>
+      </a>
+      <a class="card" href="https://facebook.com/mmartesebrindes" target="_blank">
+        <img src="assets/icons/facebook-logo.svg" alt="facebook" align="center">
+        <br>
+        <h2>Facebook</h2>
+      </a>
+      <a class="card" href="https://instagram.com/mmartesebrindes" target="_blank">
+        <img src="assets/icons/instagram-logo.svg" alt="instagram" align="center">
+        <br>
+        <h2>Instagram</h2>
+      </a>
+    </div>
+    <br>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0037715121107!2d-38.56606125731246!3d-6.890150409495282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a4738695ee186b%3A0x86ed2e3cb5686f64!2sMM+Artes+e+Brindes!5e0!3m2!1spt-BR!2sbr!4v1519047775327"
+        frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <br><br>
+    <h2>Entre em contato agora por email e faça seu orçamento!</h2>
+    <br>
+    <form>
+      <div class="input">
+        <img src="assets/icons/avatar.svg" alt="nome" class="icon-input">
+        <input type="text" placeholder="Nome" name="name" [(ngModel)]="contactUs.name" required>
+      </div>
+      <div class="input">
+        <img src="assets/icons/email.svg" alt="email" class="icon-input">
+        <input type="email" placeholder="E-mail" name="email" [(ngModel)]="contactUs.email" required>
+      </div>
+      <div class="input">
+        <img src="assets/icons/about.svg" alt="assunto" class="icon-input">
+        <input type="text" placeholder="Assunto" name="about" [(ngModel)]="contactUs.about" required>
+      </div>
+      <div class="input">
+        <textarea placeholder="Mensagem" name="message" [(ngModel)]="contactUs.message" required></textarea>
+      </div>
+      <div class="action">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>

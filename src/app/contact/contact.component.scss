@@ -1,0 +1,125 @@
+@import '~sass/variables';
+.content-div {
+  text-align: center;
+  width: 100%;
+  min-height: 300px;
+  background: linear-gradient(to bottom, $color-primary, darken($color-primary, 20%));
+  .content-title {
+    width: 90%;
+    margin: 0 auto 20px;
+    .title {
+      width: 65%;
+      background: $color-darken;
+      transform: skew(-30deg);
+      margin: 0 auto;
+      h2 {
+        padding: 30px 0;
+        color: $color-secondary;
+        transform: skew(30deg);
+      }
+    }
+  }
+  .content {
+    h2 {
+      color: $color-secondary;
+    }
+    .map {
+        width: 95%;
+        min-width: 290px;
+        margin: 0 auto;
+        iframe {
+            width: 100%;
+            height: 300px;
+            margin: 0 auto;
+        }
+    }
+    form {
+      width: 80%;
+      min-width: 290px;
+      margin: 0 auto;
+      padding: 10px;
+      color: $color-darken;
+      .input {
+        position: relative;
+        width: 100%;
+        margin-bottom: 10px;
+        .icon-input {
+          position: absolute;
+          left: 5px;
+          bottom: 8px;
+          width: 20px;
+          height: 20px;
+        }
+        input,
+        textarea {
+          padding: 10px 2%;
+          width: 98%;
+          border: none;
+          resize: none;
+          &::placeholder {
+            color: $color-darken;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        input {
+          text-indent: 20px;
+        }
+      }
+      .action {
+        button {
+          border: none;
+          padding: 10px 20px;
+          background: $color-darken;
+          color: $color-secondary;
+
+          &:hover {
+              cursor: pointer;
+              box-shadow: 0 5px 30px -8px $color-darken;
+          }
+        }
+      }
+    }
+    .cards {
+        width: 95%;
+        min-width: 300px;
+        display: table;
+        margin: 0 auto;
+        .card {
+            width: 30%;
+            min-width: 280px;
+            margin: 10px;
+            background: $color-darken;
+            padding: 10px;
+            display: inline-block;
+            h2 {
+                color: $color-secondary;
+            }
+            img {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 6px;
+            }
+            &:hover {
+                box-shadow: 0 5px 30px -8px $color-darken;
+            }
+        }
+    }
+  }
+}
+
+@media(max-width: 600px) {
+    .content-div {
+
+        .content {
+            form {
+                .input {
+                    input {
+                        text-indent: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
