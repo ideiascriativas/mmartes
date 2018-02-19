@@ -24,14 +24,14 @@
       color: $color-secondary;
     }
     .map {
-        width: 95%;
-        min-width: 290px;
+      width: 95%;
+      min-width: 290px;
+      margin: 0 auto;
+      iframe {
+        width: 100%;
+        height: 300px;
         margin: 0 auto;
-        iframe {
-            width: 100%;
-            height: 300px;
-            margin: 0 auto;
-        }
+      }
     }
     form {
       width: 80%;
@@ -73,53 +73,52 @@
           padding: 10px 20px;
           background: $color-darken;
           color: $color-secondary;
-
           &:hover {
-              cursor: pointer;
-              box-shadow: 0 5px 30px -8px $color-darken;
+            cursor: pointer;
+            box-shadow: 0 5px 30px -8px $color-darken;
           }
         }
       }
     }
     .cards {
-        width: 95%;
-        min-width: 300px;
-        display: table;
-        margin: 0 auto;
-        .card {
-            width: 30%;
-            min-width: 280px;
-            margin: 10px;
-            background: $color-darken;
-            padding: 10px;
-            display: inline-block;
-            h2 {
-                color: $color-secondary;
-            }
-            img {
-                width: 80px;
-                height: 80px;
-                margin-bottom: 6px;
-            }
-            &:hover {
-                box-shadow: 0 5px 30px -8px $color-darken;
-            }
+      width: 95%;
+      min-width: 300px;
+      display: table;
+      margin: 0 auto;
+      .card {
+        width: 20%;
+        min-width: 280px;
+        margin: 10px;
+        background: $color-darken;
+        padding: 10px;
+        display: inline-block;
+        h2 {
+          font-size: 1em;
+          color: $color-secondary;
         }
+        img {
+          width: 80px;
+          height: 80px;
+          margin-bottom: 6px;
+        }
+        &:hover {
+          box-shadow: 0 5px 30px -8px $color-darken;
+        }
+      }
     }
   }
 }
 
 @media(max-width: 600px) {
-    .content-div {
-
-        .content {
-            form {
-                .input {
-                    input {
-                        text-indent: 30px;
-                    }
-                }
-            }
+  .content-div {
+    .content {
+      form {
+        .input {
+          input {
+            text-indent: 30px;
+          }
         }
+      }
     }
+  }
 }

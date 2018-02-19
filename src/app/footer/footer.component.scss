@@ -8,12 +8,17 @@ footer {
   position: relative;
   .content {
     padding: 30px;
+    h5 {
+      a {
+        color: $color-primary;
+      }
+    }
     .logo {
       position: absolute;
       right: 5px;
       bottom: 5px;
       img {
-        width: 80px;
+        width: 70px;
         height: auto;
       }
     }

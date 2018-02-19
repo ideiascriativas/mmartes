@@ -8,34 +8,44 @@ export const PRODUCTS_LINE: ProductLine[] = [
         products: [
             {
                 id: 1,
-                name: 'Vermelho',
-                image: 'red'
+                name: 'Krusher Vermelho - Alltak',
+                image: 'assets/images/adesivos-recorte/01.png'
             },
             {
                 id: 2,
-                name: 'Azul',
-                image: 'assets/images/teste4.jpg'
+                name: 'Krusher Preto - Alltak',
+                image: 'assets/images/adesivos-recorte/02.png'
             },
             {
                 id: 3,
-                name: 'Amarelo',
-                image: 'assets/images/teste1.jpg'
+                name: 'Krusher Rosê - Alltak',
+                image: 'assets/images/adesivos-recorte/03.png'
             },
             {
                 id: 4,
-                name: 'Cinza',
-                image: 'gray'
+                name: 'Krusher Prata - Alltak',
+                image: 'assets/images/adesivos-recorte/04.png'
             },
             {
                 id: 5,
-                name: 'Roxo',
-                image: 'assets/images/teste2.jpg'
+                name: 'Krusher Verde Militar - Alltak',
+                image: 'assets/images/adesivos-recorte/05.png'
             },
             {
                 id: 6,
-                name: 'Verde',
-                image: 'assets/images/teste3.jpg'
+                name: 'Spicy Red - Alltak',
+                image: 'assets/images/adesivos-recorte/06.png'
             },
+            {
+                id: 7,
+                name: 'Verde Turquesa - Alltak',
+                image: 'assets/images/adesivos-recorte/07.png'
+            },
+            {
+                id: 8,
+                name: 'Dark Blue - Alltak',
+                image: 'assets/images/adesivos-recorte/08.png'
+            }
         ]
     },
     {
@@ -45,34 +55,94 @@ export const PRODUCTS_LINE: ProductLine[] = [
         products: [
             {
                 id: 1,
-                name: 'Vermelho',
-                image: 'red'
+                name: 'Krusher Vermelho - Alltak',
+                image: 'assets/images/adesivos-automotivos/01.png'
             },
             {
                 id: 2,
-                name: 'Azul',
-                image: 'blue'
+                name: 'Krusher Preto - Alltak',
+                image: 'assets/images/adesivos-automotivos/02.png'
             },
             {
                 id: 3,
-                name: 'Amarelo',
-                image: 'yellow'
+                name: 'Krusher Rosê - Alltak',
+                image: 'assets/images/adesivos-automotivos/03.png'
             },
             {
                 id: 4,
-                name: 'Cinza',
-                image: 'gray'
+                name: 'Krusher Prata - Alltak',
+                image: 'assets/images/adesivos-automotivos/04.png'
             },
             {
                 id: 5,
-                name: 'Roxo',
-                image: 'purple'
+                name: 'Krusher Verde Militar - Alltak',
+                image: 'assets/images/adesivos-automotivos/05.png'
             },
             {
                 id: 6,
-                name: 'Verde',
-                image: 'green'
+                name: 'Spicy Red - Alltak',
+                image: 'assets/images/adesivos-automotivos/06.png'
             },
+            {
+                id: 7,
+                name: 'Verde Turquesa - Alltak',
+                image: 'assets/images/adesivos-automotivos/07.png'
+            },
+            {
+                id: 8,
+                name: 'Dark Blue - Alltak',
+                image: 'assets/images/adesivos-automotivos/08.png'
+            },
+            {
+                id: 9,
+                name: 'Coconut White - Alltak',
+                image: 'assets/images/adesivos-automotivos/09.png'
+            },
+            {
+                id: 10,
+                name: 'Cinza Storm - Alltak',
+                image: 'assets/images/adesivos-automotivos/10.png'
+            },
+            {
+                id: 11,
+                name: 'Cinza Light - Alltak',
+                image: 'assets/images/adesivos-automotivos/11.png'
+            },
+            {
+                id: 12,
+                name: 'Black Piano - Alltak',
+                image: 'assets/images/adesivos-automotivos/12.png'
+            },
+            {
+                id: 13,
+                name: 'Croco Branco - Imprimax',
+                image: 'assets/images/adesivos-automotivos/13.png'
+            },
+            {
+                id: 14,
+                name: 'Crocoi Preto - Imprimax  ',
+                image: 'assets/images/adesivos-automotivos/14.png'
+            },
+            {
+                id: 15,
+                name: 'Dimension - Alltak',
+                image: 'assets/images/adesivos-automotivos/15.png'
+            },
+            {
+                id: 16,
+                name: 'Pixel - Alltak',
+                image: 'assets/images/adesivos-automotivos/16.png'
+            },
+            {
+                id: 17,
+                name: 'Pixel Trans. - Alltak',
+                image: 'assets/images/adesivos-automotivos/17.png'
+            },
+            {
+                id: 18,
+                name: 'Jateado transparente - Alltak',
+                image: 'assets/images/adesivos-automotivos/18.png'
+            }
         ]
     },
     {
@@ -189,54 +259,7 @@ export const PRODUCTS_LINE: ProductLine[] = [
                 id: 22,
                 name: 'MI 101 - Imprimax',
                 image: 'assets/images/adesivos-decoracao/Decor22.png'
-            },
-            {
-                id: 23,
-                name: 'Pixel - Alltak',
-                image: 'assets/images/adesivos-decoracao/Decor23.png'
-            },
-            {
-                id: 24,
-                name: 'Pixel Trans. - Alltak',
-                image: 'assets/images/adesivos-decoracao/Decor24.png'
-            },
-        ]
-    },
-    {
-        id: 4,
-        name: 'Brindes',
-        image: '/assets/images/about/whoiam.png',
-        products: [
-            {
-                id: 1,
-                name: 'Vermelho',
-                image: 'red'
-            },
-            {
-                id: 2,
-                name: 'Azul',
-                image: 'blue'
-            },
-            {
-                id: 3,
-                name: 'Amarelo',
-                image: 'yellow'
-            },
-            {
-                id: 4,
-                name: 'Cinza',
-                image: 'gray'
-            },
-            {
-                id: 5,
-                name: 'Roxo',
-                image: 'purple'
-            },
-            {
-                id: 6,
-                name: 'Verde',
-                image: 'green'
-            },
+            }
         ]
     }
 ];
