@@ -38,6 +38,7 @@ import { NewsService } from './services/news.service';
 import { ProductLineService } from './services/product-line.service';
 import { FullImageService } from './services/full-image.service';
 import { PicturesService } from './services/pictures.service';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { PicturesService } from './services/pictures.service';
     BackImageDirective,
     FullImageComponent,
     StreamsComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,34 @@
+@import '~sass/variables';
+footer {
+  width: 100%;
+  background: $color-darken;
+  color: $color-secondary;
+  text-align: center;
+  display: table;
+  position: relative;
+  .content {
+    padding: 30px;
+    .logo {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      img {
+        width: 80px;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  footer {
+    .content {
+      padding: 10px;
+      .logo {
+          position: initial;
+          width: 100%;
+          margin-top: 10px;
+      }
+    }
+  }
+}
