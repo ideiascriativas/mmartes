@@ -3,20 +3,20 @@ import { New } from '../_classes/new';
 export const NEWS: New[] = [
   {
     id: 1,
-    title: 'Aqui utilizamos máquinas com',
-    titleHighlight: 'mais alta tecnologia',
-    description: 'Venha conhecer nosso trabalho!'
+    title: '',
+    titleHighlight: 'Mais tecnologia',
+    description: ''
   },
   {
     id: 2,
-    title: 'Seu carro ou parede com com papéis',
-    titleHighlight: 'personalizados',
-    description: 'Com a melhor qualidade e criatividade do mercado.'
+    title: '',
+    titleHighlight: 'Personalizados',
+    description: ''
   },
   {
     id: 3,
     title: '',
     titleHighlight: 'Copos personalizados',
-    description: 'Crie o copo dos seus sonhos!'
+    description: ''
   }
 ];

@@ -27,7 +27,6 @@
       z-index: 2;
       overflow: auto;
       white-space: nowrap;
-      padding-bottom: 10px;
       .picture {
         display: inline-block;
         border-radius: 4px;
@@ -70,4 +69,19 @@
       }
     }
 
+}
+
+@media(max-width: 500px) {
+  .content-div {
+    .content-title {
+      width: 100%;
+      .title {
+        transform: skew(0);
+        width: 100%;
+        h2 {
+          transform: skew(0);
+        }
+      }
+    }
+  }
 }

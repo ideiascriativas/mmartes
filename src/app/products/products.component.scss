@@ -4,6 +4,7 @@
   width: 100%;
   min-height: 300px;
   background: linear-gradient(to bottom, $color-primary, darken($color-primary, 20%));
+  padding-bottom: 10px;
   .content-title {
     width: 90%;
     margin: 0 auto 20px;
@@ -20,7 +21,6 @@
     }
   }
   .products {
-    padding-bottom: 10px;
     .back-image {
       height: auto;
       background-position: center !important;
@@ -40,7 +40,6 @@
         z-index: 2;
         overflow: auto;
         white-space: nowrap;
-        padding-bottom: 20px;
         .product {
           display: inline-block;
           border-radius: 4px;
@@ -91,6 +90,21 @@
         background: $color-darken;
         opacity: 0.5;
         z-index: -1;
+      }
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .content-div {
+    .content-title {
+      width: 100%;
+      .title {
+        transform: skew(0);
+        width: 100%;
+        h2 {
+          transform: skew(0);
+        }
       }
     }
   }

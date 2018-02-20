@@ -122,3 +122,18 @@
     }
   }
 }
+
+@media(max-width: 500px) {
+  .content-div {
+    .content-title {
+      width: 100%;
+      .title {
+        transform: skew(0);
+        width: 100%;
+        h2 {
+          transform: skew(0);
+        }
+      }
+    }
+  }
+}

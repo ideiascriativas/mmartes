@@ -53,13 +53,16 @@ button:focus {
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 10px;
+    width: 4px;
+    height: 4px;
     //background: rgba(255, 255, 255, 3);
     background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $color-secondary;
+    background: #aa8c8c;
     border-radius: 10px;
+    &:hover {
+        background: darken(#aa8c8c, 20%);
+    }
 }

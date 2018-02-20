@@ -63,7 +63,8 @@
                 button {
                     animation-delay: 1s;
                     padding: 10px 20px;
-                    color: $color-primary;
+                    background: $color-primary !important;
+                    color: $color-secondary;
                     font-size: 1.2em;
                     font-weight: bold;
                     border: none;
@@ -71,14 +72,10 @@
                     margin: 5px auto;
                     &:hover {
                         cursor: pointer;
-                        background: $color-secondary;
-                        color: $color-primary;
+                        background: $color-secondary !important;
+                        color: $color-darken;
                         border-radius: 5px;
                         transition-duration: 0.3s;
-                    }
-                    img {
-                        width: 20px;
-                        height: auto;
                     }
                 }
             }
@@ -88,7 +85,7 @@
         @include fixed-full-page();
         @include layer(5);
         background: $color-darken;
-        opacity: 0.7;
+        opacity: 0.9;
     }
 }
 

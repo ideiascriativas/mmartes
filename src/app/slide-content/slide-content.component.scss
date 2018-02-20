@@ -15,7 +15,7 @@
     }
     .title-highlight {
       font-size: 2.2em;
-      color: $color-primary;
+      color: $color-secondary;
       font-weight: bold;
     }
     .description {
@@ -44,7 +44,7 @@
   .typewriter {
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid $color-primary;
+    border-right: .15em solid $color-secondary;
     /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
@@ -75,6 +75,6 @@
     border-color: transparent
   }
   50% {
-    border-color: $color-primary;
+    border-color: $color-secondary;
   }
 }

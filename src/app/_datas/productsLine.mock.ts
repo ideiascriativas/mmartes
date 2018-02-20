@@ -4,7 +4,7 @@ export const PRODUCTS_LINE: ProductLine[] = [
     {
         id: 1,
         name: 'Adesivos para recorte',
-        image: '/assets/images/about/whoiam.png',
+        image: '',
         products: [
             {
                 id: 1,
@@ -51,7 +51,7 @@ export const PRODUCTS_LINE: ProductLine[] = [
     {
         id: 2,
         name: 'Revestimento automotivos',
-        image: '/assets/images/about/whoiam.png',
+        image: '',
         products: [
             {
                 id: 1,
@@ -148,7 +148,7 @@ export const PRODUCTS_LINE: ProductLine[] = [
     {
         id: 3,
         name: 'Revestimento decorativo',
-        image: '/assets/images/about/whoiam.png',
+        image: '',
         products: [
             {
                 id: 1,
