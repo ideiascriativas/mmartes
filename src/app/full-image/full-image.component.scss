@@ -18,13 +18,13 @@
     .modal {
       width: 95%;
       height: 95%;
-      background: $color-darken;
+      background: $color-black;
       margin: 0 auto;
       position: relative;
-      box-shadow: 0 0 30px -5px $color-secondary;
+      box-shadow: 0 0 30px -5px $color-black;
       .close {
         position: absolute;
-        top: 5px;
+        top: 10px;
         right: 10px;
         &:hover {
           cursor: pointer;
@@ -53,7 +53,7 @@
 
         h3 {
           padding: 10px;
-          color: $color-secondary;
+          color: $color-darken;
         }
       }
     }
@@ -62,7 +62,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: $color-darken;
+    background: $color-black;
     opacity: 0.6;
     top: 0;
     left: 0;
@@ -74,8 +74,8 @@
   .full-page {
     .full-page-content {
       .modal {
-         width: 80%;
-         max-width: 1400px;
+         width: 100%;
+         max-width: 1200px;
       }
     }
   }

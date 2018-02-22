@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -55,23 +55,19 @@
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg10" />
-  <g
-     id="g8"
-     transform="translate(0,-2)">
-    <path
-       d="M 24,3 C 24,2.4 23.6,2 23,2 H 1 C 0.4,2 0,2.4 0,3 v 2 c 0,0.6 0.4,1 1,1 h 22 c 0.6,0 1,-0.4 1,-1 z"
-       id="path2"
-       inkscape:connector-curvature="0"
-       style="fill:#ffffff" />
-    <path
-       d="m 24,11 c 0,-0.6 -0.4,-1 -1,-1 H 1 c -0.6,0 -1,0.4 -1,1 v 2 c 0,0.6 0.4,1 1,1 h 22 c 0.6,0 1,-0.4 1,-1 z"
-       id="path4"
-       inkscape:connector-curvature="0"
-       style="fill:#ffffff" />
-    <path
-       d="m 24,19 c 0,-0.6 -0.4,-1 -1,-1 H 1 c -0.6,0 -1,0.4 -1,1 v 2 c 0,0.6 0.4,1 1,1 h 22 c 0.6,0 1,-0.4 1,-1 z"
-       id="path6"
-       inkscape:connector-curvature="0"
-       style="fill:#ffffff" />
-  </g>
+  <path
+     style="fill:#000000"
+     inkscape:connector-curvature="0"
+     id="path2"
+     d="M 24,1 C 24,0.4 23.6,0 23,0 H 1 C 0.4,0 0,0.4 0,1 v 2 c 0,0.6 0.4,1 1,1 h 22 c 0.6,0 1,-0.4 1,-1 z" />
+  <path
+     style="fill:#000000"
+     inkscape:connector-curvature="0"
+     id="path4"
+     d="M 24,9 C 24,8.4 23.6,8 23,8 H 1 C 0.4,8 0,8.4 0,9 v 2 c 0,0.6 0.4,1 1,1 h 22 c 0.6,0 1,-0.4 1,-1 z" />
+  <path
+     style="fill:#000000"
+     inkscape:connector-curvature="0"
+     id="path6"
+     d="m 24,17 c 0,-0.6 -0.4,-1 -1,-1 H 1 c -0.6,0 -1,0.4 -1,1 v 2 c 0,0.6 0.4,1 1,1 h 22 c 0.6,0 1,-0.4 1,-1 z" />
 </svg>

@@ -30,7 +30,7 @@
       position: relative;
       z-index: 1;
       h2 {
-        color: $color-secondary;
+        color: $color-black;
         margin: 0 auto;
         z-index: 2;
         padding: 20px 0px;
@@ -66,7 +66,7 @@
             left: 0;
             bottom: 6px;
             color: $color-secondary;
-            background: $color-darken;
+            background: $color-black;
             opacity: 0.8;
             padding: 3px 0;
             z-index: 2;
@@ -76,7 +76,7 @@
           }
           &:hover {
             cursor: pointer;
-            box-shadow: 0 10px 30px -5px $color-darken;
+            box-shadow: 0 8px 20px -8px $color-black;
             transition-duration: 0.2s;
           }
         }
@@ -88,7 +88,7 @@
         top: 0;
         left: 0;
         background: $color-darken;
-        opacity: 0.5;
+        opacity: 0;
         z-index: -1;
       }
     }

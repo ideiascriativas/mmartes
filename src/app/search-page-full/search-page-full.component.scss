@@ -64,7 +64,7 @@
                     animation-delay: 1s;
                     padding: 10px 20px;
                     background: $color-primary !important;
-                    color: $color-secondary;
+                    color: $color-black;
                     font-size: 1.2em;
                     font-weight: bold;
                     border: none;
@@ -84,11 +84,7 @@
     .dark-page {
         @include fixed-full-page();
         @include layer(5);
-        background: $color-darken;
+        background: $color-black;
         opacity: 0.9;
     }
-}
-
-@media(max-width: 798px) {
-    button span {}
 }

@@ -21,7 +21,7 @@
         width: auto;
         position: absolute;
         right: -40px;
-        box-shadow: 0 0 30px -8px $color-darken;
+        box-shadow: 0 0 30px -8px $color-black;
       }
     }
     .text {
@@ -31,10 +31,10 @@
       height: 100%;
       .title {
         padding: 10px;
-        margin-left: 40px;
+        margin-left: 60px;
         margin-top: 60px;
         h2 {
-          color: $color-primary;
+          color: $color-black;
         }
         p {
           text-align: justify;
@@ -63,7 +63,7 @@
         width: auto;
         position: absolute;
         left: -40px;
-        box-shadow: 0 0 30px -8px $color-darken;
+        box-shadow: 0 0 30px -8px $color-black;
       }
     }
     .text {
@@ -76,7 +76,7 @@
         margin-right: 40px;
         margin-top: 60px;
         h2 {
-          color: $color-primary;
+          color: $color-black;
         }
         p {
           text-align: justify;
@@ -103,7 +103,7 @@
         .title {
           margin-left: 5px;
           margin-right: 5px;
-          margin-top: 40px;
+          margin-top: 20px;
         }
       }
     }

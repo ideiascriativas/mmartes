@@ -11,8 +11,8 @@ export class ShadowRedDirective {
   constructor() { }
 
   @HostListener('mouseover') mouseOver() {
-    this.bagkground = '#a7474c';
-    this.boxShadow = '0 0 20px -5px #fff';
+    this.bagkground = '#535050';
+    this.boxShadow = '0 0 20px -5px #000';
   }
 
   @HostListener('mouseleave') mouseLeave() {

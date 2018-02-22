@@ -8,7 +8,6 @@ import { MenuService } from './menu.service';
 export class IconMenuDirective implements OnInit {
 
   @HostBinding('style.transform') transform;
-  @HostBinding('style.background') background;
   isClicked: boolean;
 
   constructor(
@@ -18,7 +17,6 @@ export class IconMenuDirective implements OnInit {
 
   ngOnInit() {
     this.menuService.currentValue.subscribe(isOpen => this.isClicked = isOpen);
-    this.background = this.sanitizer.bypassSecurityTrustStyle('#302F2F');
   }
 
   @HostListener('click') setTransform() {
@@ -32,11 +30,9 @@ export class IconMenuDirective implements OnInit {
 
   private changeToVertical() {
     this.transform = this.sanitizer.bypassSecurityTrustStyle('rotateZ(0)');
-    this.background = this.sanitizer.bypassSecurityTrustStyle('#302F2F');
   }
 
   private changeToHorizontal() {
     this.transform = this.sanitizer.bypassSecurityTrustStyle('rotateZ(90deg)');
-    this.background = this.sanitizer.bypassSecurityTrustStyle('transparent');
   }
 }
