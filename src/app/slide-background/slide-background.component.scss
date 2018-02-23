@@ -11,7 +11,7 @@
     no-repeat,
     fixed,
     cover,
-    top);
+    bottom);
   }
   #slideTwo {
     @include background(url('/assets/images/slide/slide2.png'),
@@ -35,11 +35,11 @@
 @media(max-width:812px) {
   .slide {
     #slideOne {
-      @include background(url('/assets/images/slide/slide1-cel.png'),
+      @include background(url('/assets/images/slide/slide1.png'),
       no-repeat,
       fixed,
       cover,
-      top);
+      center);
     }
 
     #slideTwo {
