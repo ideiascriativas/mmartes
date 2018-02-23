@@ -22,14 +22,14 @@
             button {
                 border: none;
                 padding: 10px 20px;
-                background: $color-secondary;
+                background: $color-black;
                 color: $color-primary;
                 font-weight: bold;
                 border: 5px;
                 &:hover {
                     background: $color-primary;
-                    color: $color-secondary;
-                    box-shadow: 0 0 30px -8px $color-secondary;
+                    color: $color-black;
+                    box-shadow: 0 0 30px -8px $color-black;
                     cursor: pointer;
                     transition-duration: 0.4s;
                 }
