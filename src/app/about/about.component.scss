@@ -43,7 +43,6 @@
       }
     }
   }
-
   .content-left {
     position: relative;
     width: 100%;
@@ -87,10 +86,18 @@
   }
 }
 
+@media (max-width: 800px) {
+  .content-div {
+    .content {
+      height: 500px;
+    }
+  }
+}
+
 @media(max-width: 740px) {
   .content-div {
-
-    .content, .content-left {
+    .content,
+    .content-left {
       .image {
         width: 150px/960px * 100%;
         height: 100%;

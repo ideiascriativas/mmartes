@@ -21,7 +21,7 @@ export class FullImageService {
     this.openFullImage = new BehaviorSubject<boolean>(false);
     this.isOpen = this.openFullImage.asObservable();
     this.image = new FullImage();
-    this.image.src = 'assets/images/teste4.jpg';
+    this.image.src = 'assets/images/about/whoami.png';
     this.image.alt = 'teste';
     this.currentFullImage = new BehaviorSubject<FullImage>(this.image);
     this.fullImage = this.currentFullImage.asObservable();
