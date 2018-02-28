@@ -8,42 +8,42 @@ export const PRODUCTS_LINE: ProductLine[] = [
         products: [
             {
                 id: 1,
-                name: 'Krusher Vermelho - Alltak',
+                name: 'Aço Escovado Cinza - Imprimax',
                 image: 'assets/images/adesivos-recorte/01.png'
             },
             {
                 id: 2,
-                name: 'Krusher Preto - Alltak',
+                name: 'Aço Escovado Ouro - Imprimax',
                 image: 'assets/images/adesivos-recorte/02.png'
             },
             {
                 id: 3,
-                name: 'Krusher Rosê - Alltak',
+                name: 'Azul Royal - Imprimax',
                 image: 'assets/images/adesivos-recorte/03.png'
             },
             {
                 id: 4,
-                name: 'Krusher Prata - Alltak',
+                name: 'Laranja - Imprimax',
                 image: 'assets/images/adesivos-recorte/04.png'
             },
             {
                 id: 5,
-                name: 'Krusher Verde Militar - Alltak',
+                name: 'Amarelo - Imprimax',
                 image: 'assets/images/adesivos-recorte/05.png'
             },
             {
                 id: 6,
-                name: 'Spicy Red - Alltak',
+                name: 'Preto - Alltak',
                 image: 'assets/images/adesivos-recorte/06.png'
             },
             {
                 id: 7,
-                name: 'Verde Turquesa - Alltak',
+                name: 'Branco - Imprimax',
                 image: 'assets/images/adesivos-recorte/07.png'
             },
             {
                 id: 8,
-                name: 'Dark Blue - Alltak',
+                name: 'Verde - Alltak',
                 image: 'assets/images/adesivos-recorte/08.png'
             }
         ]
